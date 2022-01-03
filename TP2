@@ -35,6 +35,7 @@
 --WHERE Percentage < 100 AND encompasses.Continent = "Europe"
 
 --Q10
-SELECT DISTINCT Capital FROM Country
-JOIN City ON City.Country = Country.Code
-WHERE City.Latitude > 60
+--SELECT DISTINCT Capital FROM Country
+--JOIN City ON City.Country = Country.Code
+--JOIN encompasses ON encompasses.Country = Country.Code
+--WHERE City.Latitude > 60 AND encompasses.Continent = "Europe"

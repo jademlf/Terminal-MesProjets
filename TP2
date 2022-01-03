@@ -1,1 +1,40 @@
---Q1
+-- Q1
+--SELECT Name FROM Country
+
+--Q2
+--SELECT Capital FROM Country
+
+--Q3
+--SELECT Capital FROM Country
+--WHERE Name="Botswana"
+
+--Q4
+--SELECT Name FROM Country
+--WHERE Capital is NULL
+
+--Q5
+--SELECT Name FROM Country
+--WHERE Population>64000000
+
+--Q6
+--SELECT Name FROM Country
+--WHERE Population>64000000
+--ORDER BY Name ASC
+
+--Q7 
+--SELECT Name,Population FROM Country
+--ORDER BY Population DESC
+
+--Q8
+--SELECT Name FROM Country
+--ORDER BY Area ASC LIMIT 10
+
+--Q9
+--SELECT DISTINCT Name FROM Country
+--JOIN encompasses ON encompasses.Country = Country.Code 
+--WHERE Percentage < 100 AND encompasses.Continent = "Europe"
+
+--Q10
+SELECT DISTINCT Capital FROM Country
+JOIN City ON City.Country = Country.Code
+WHERE City.Latitude > 60
